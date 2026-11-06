@@ -91,8 +91,8 @@ footer .bar{justify-content:space-between;font-size:.95rem}
   <section class="view" id="v-ana">
     <div class="hero">
       <div>
-        <h1>Zarı at, oyuna başla.</h1>
-        <p>Buraya oyununun tek cümlelik açıklaması gelecek. Şimdilik zar sadece örnek: tıkla, rastgele bir kart çeksin.</p>
+        <h1>Zarı at, hangisi oc sen karar ver!</h1>
+        <p>Ocluk cok zor bir mertebedir zaman ister sabır ister emek ister herkes harakiri yapacak kadar oc değildir...</p>
         <div class="btns">
           <a class="btn main" href="#gunluk">Hemen oyna</a>
           <a class="btn" href="#siralama">Sıralamayı gör</a>
@@ -100,7 +100,7 @@ footer .bar{justify-content:space-between;font-size:.95rem}
       </div>
       <button class="dice" id="zar" type="button" aria-live="polite">
         <span class="face" id="yuz">?</span>
-        <span class="hint">Zara dokun</span>
+        <span class="hint">EN OCU SEN SEÇ</span>
       </button>
     </div>
     <ol class="steps">
@@ -166,7 +166,7 @@ footer .bar{justify-content:space-between;font-size:.95rem}
   }
   window.addEventListener('hashchange',show);show();
 
-  var kartlar=['Kart A','Kart B','Kart C','Kart D','Kart E','Kart F'];
+  var kartlar=['Burjuva Osman','İşçi Onur','Saygısız Holigan Ozi','İcardi','Osimhen','Cüce Torerira'];
   var zar=document.getElementById('zar'),yuz=document.getElementById('yuz'),busy=false;
   zar.addEventListener('click',function(){
     if(busy)return;busy=true;zar.classList.add('roll');var n=0;
